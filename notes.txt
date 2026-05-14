@@ -1,3 +1,4 @@
+Lecture1
 Complete Generative AI Series → Booktiar / Ahmed Rappy
 What you will learn?
 -Generative AI
@@ -24,7 +25,293 @@ Frameworks Mentioned
 Pre-requisite
 -Python Programming
 -Basics of NLP understanding like RNN, Attention
--Introduction to Generative AI
+Introduction to Generative AI
 -ChatGPT
 -Google Gemini
 -Meta Llama
+
+Lecture2-
+What is Generative AI?
+
+Generative AI generate new data based on training sample.
+Generative model can generate image, text, audio, video etc. data as output.
+
+So generative AI is a very high topic:
+
+Generative Image model
+Generative Language model
+Why are generative model required?
+Understand complex pattern from data
+Content generation
+Build powerful applications
+Where Generative AI exists
+Diagram (Nested Subset Diagram)
+Artificial Intelligence
+└── Machine Learning
+    └── Deep Learning
+        └── GenAI
+GenAI is a subset of Deep Learning
+which is subset of Machine Learning
+which is subset of Artificial Intelligence
+
+Discriminative vs Generative Model
+Discriminative Model (Supervised)
+Diagram
+[Cat] ----\
+            --> [Discriminative Model] --> cat/dog
+[Dog] ----/
+Generative Model
+Diagram
+[Noise Data] --> [Generative Model] --> [Cat]
+
+Generative AI is a subset of deep learning and generative models are trained on huge amount of data.
+While training the generative model we don't need to provide labelled data.
+It is not possible unless we have a huge amount of data.
+So, it's just try to see the relationship between distribution of the data.
+In Generative AI we give unstructured data to the LLM model for training purpose.
+
+What is LLMs?
+Large Language Models (LLMs) are foundational machine learning models that use deep learning algorithms to process and understand natural language.
+These models are trained on massive amount of text data to learn patterns and entity relationship in the language.
+It is a language model which is responsible for performing tasks such as:
+-text to text generation
+-text to image generation
+-image to text generation (Multimodal)
+
+What makes LLM so powerful?
+In case of LLM, one model can be used for a whole variety of tasks like:
+-Text generation
+-Chatbot
+-Summarizer
+-Translation
+-Code generation and more
+
+So, LLM is subset of Deep Learning & it has some properties merge with Generative AI.
+Train the model for a specific task.
+-Gemini(Google)
+-GPT(OpenAI)
+-xLM(Meta)(Designed for multilingual understanding)
+-T5(Google)(Text-To-Text Transfer Transformer)
+-Llama(Meta)(Developers could:download,fine-tune,run locally)
+-Mistral(Mistral AI)(Smaller models but very strong performance.)
+-Falcon(Technology Innovation Institute)
+
+Which Models Are Best For What?
+Use Case	  Best Choices
+General chatbot  	GPT, Gemini
+Coding	          GPT, Codestral
+Local AI	        Llama, Mistral
+Research	        T5, Falcon
+Multilingual AI	  XLM, Gemini
+Cheap deployment  Mistral
+Fine-tuning	      Llama,Mistral
+
+This is one of the most important concepts in GenAI.
+People often confuse:
+-Open-source
+-Open-weight
+-Closed-source
+-Research models
+
+They are NOT the same thing.
+1. Closed Models
+A closed model means:
+You cannot download the actual model weights
+You cannot see full training data
+You cannot fully inspect training code
+You mainly access it through an API or app
+
+Example:
+OpenAI GPT
+Google Gemini
+Anthropic Claude
+
+Think of it like this
+You can USE the AIBut you cannot OPEN the AI engine
+Like:
+You can drive a car
+But cannot open factory design documents
+What companies provide
+Usually:
+-Chat interface
+-API access
+-Some documentation
+But NOT:
+-Full model internals
+-Weights
+-Full training dataset
+Advantages
+-Very powerful
+-Professionally maintained
+-Usually best performance
+-Safer and optimized
+Disadvantages
+-Expensive API cost
+-No deep customization
+-Internet required
+-Company controls usage
+
+2. Open-Weight Models
+This is VERY important.
+Open-weight does NOT always mean fully open-source.
+It means:
+The trained neural network weights are downloadable.
+Example:
+Meta Llama
+Mistral AI Mistral
+Technology Innovation Institute Falcon
+
+What are “weights”?
+Weights are the learned knowledge of the AI.
+During training:
+model learns patterns,numbers get adjusted,these learned numbers = weights
+
+Simplified idea:
+Training Data→Learning Process→Model Weights\text{Training Data} \rightarrow \text{Learning Process} \rightarrow \text{Model Weights}Training Data→Learning Process→Model Weights
+Weights store:
+language understanding,reasoning patterns,coding knowledge and relationships between words
+
+Open-weight means you can:
+-Download model
+-Run locally
+-Fine-tune it
+
+Modify behavior
+-Deploy on your own servers
+
+But maybe NOT:
+-Get training dataset
+-Get full training code
+
+Redistribute commercially freely
+So:
+Open-weight ≠ Fully open-source
+
+3. Fully Open-Source Models
+True open-source means:
+-weights available
+-training code available
+-architecture available
+-dataset details available
+-modification allowed
+
+
+This is similar to Linux/open-source software philosophy.
+
+Example spirit
+Like:
+-Linux
+-Python
+-TensorFlow
+You can:
+-inspect
+-modify
+-redistribute
+
+In AI, fully open-source is rare
+Because training huge models costs:
+millions of dollars
+massive GPU clusters
+proprietary datasets
+
+So companies often release:
+weights only
+instead of everything.
+
+4. Research/Open Models
+This means:
+
+Mainly released for academic or research purposes.
+Example:
+T5
+XLM
+
+Usually includes
+Research paper
+Model architecture
+Some pretrained weights
+Benchmarks
+Experimental ideas
+
+Purpose:
+Advance AI researchNot necessarily commercial productization
+
+Why T5 became famous
+T5 introduced:
+Everything is Text-to-Text
+This influenced many future models.
+So its research impact became huge.
+
+5. API-only Models
+Some companies only expose APIs.
+Example:
+GPT API
+Gemini API
+Claude API
+You send:
+Prompt → API → AI Response
+But:
+model stays on company servers
+you never access actual weights
+6. Local Models
+Open-weight models enable local AI.
+Example:
+Llama
+Mistral
+Falcon
+You can run them:
+-on laptop
+-gaming PC
+-private server
+using tools like:
+Ollama
+LM Studio
+Hugging Face
+7. Best Analogy
+Closed Model
+Restaurant FoodYou can eat itBut recipe is secret
+
+Open-weight Model
+Restaurant gives prepared sauceYou can use it at homeBut full manufacturing process is secret
+
+Fully Open-source Model
+Full recipe + ingredients + cooking process sharedYou can modify and redistribute
+
+8. Why Companies Keep Models Closed
+Because models are:
+expensive to train
+competitive advantage
+security sensitive
+commercially valuable
+Training frontier models may cost:
+Training Cost≈Millions to Billions of Dollars\text{Training Cost} \approx \text{Millions to Billions of Dollars}Training Cost≈Millions to Billions of Dollars
+
+9. Industry Reality
+Today:
+TypeDominant PlayersClosed frontier AIGPT, Gemini, ClaudeOpen-weight ecosystemLlama, MistralResearch ecosystemT5, XLM
+
+10. Which Should You Learn First?
+If you want:
+Build applications quickly
+Learn:
+GPT APIs
+Gemini APIs
+Build local/private AI systems
+Learn:
+Llama
+Mistral
+Ollama
+Research/Deep AI understanding
+Learn:
+T5
+Transformers
+Attention
+Fine-tuning
+One Final Important Concept
+Most modern AI development today is:
+Closed Models + Open Ecosystem
+Meaning:
+companies provide powerful APIs
+developers build apps around them
+open-source community builds alternatives
+That balance is shaping the entire GenAI industry right now.
