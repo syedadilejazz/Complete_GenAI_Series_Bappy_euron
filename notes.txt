@@ -1,0 +1,30 @@
+Complete Generative AI Series → Booktiar / Ahmed Rappy
+What you will learn?
+-Generative AI
+-Text Preprocessing and Text Embedding (Text to Numbers)
+-Large Language Model (LLMs)
+-HuggingFace Platform and Its API
+-Open AI
+-Prompt Engineering
+-LangChain
+-Vector Database
+-Llama Index
+-Open Source LLM model
+-Retrieval-Augmented Generation (RAG)
+-20+ Project with Deployment (Modular approach, Pipeline)
+-Cloud Generative AI – AWS Bedrock, GCP Vertex AI
+
+Frameworks Mentioned
+-Tensorflow
+-Keras
+-Pytorch framework for Deep Learning
+-Langchain framework for GenAI
+-Llama Index
+
+Pre-requisite
+-Python Programming
+-Basics of NLP understanding like RNN, Attention
+-Introduction to Generative AI
+-ChatGPT
+-Google Gemini
+-Meta Llama
