@@ -329,7 +329,7 @@ Break the problem down into several sub-problem, then try to develop a step by s
 -Monitoring & Model Updating
 
 NLP Pipeline
--Data Acquistion
+1.Data Acquistion
 --Available Data(csv,txt,pdf,docs,xlsx)
 --Other Data Sources(DB,Internet,APIs and Scrapping)
 --No Data(Create your own data)(LLM OpenAI can generate data)
@@ -345,15 +345,65 @@ Example5-Add Additional Data/Noise
 I am a Data Scientist, I love this job.
 
 
--Data Preprocessing
--Cleanup(HTML,enoji,spelling correction)
--Basic Preprocessing-Tokenisation(sentences and words)
--Advance Preprocessing
--Optional Preprocessing
+2.Data Preprocessing
+--Cleanup(HTML,enoji,spelling correction)
+--Basic Preprocessing-Tokenisation(sentences and words)
+--Advance Preprocessing
+--Optional Preprocessing
 --Stopword removal
 --Steaming(Less used nowadays)
 --lemmantization(Actively used)
 --Puncatuation removal(@#$%^&*():"<>?)
 --Lower case
 --Language Detetction
+
+[My name is Bappy, I am a Data scientist]
+word tokenisation-["My", "name", "is", "Bappy", ",", "I", "am", "a", "Data", "scientist"](mostly used)
+sentence tokenisation-["My name is Bappy", "I am a Data scientist"]
+Sentence tokenization mainly looks for punctuation like:
+.
+!
+?
+
+Steaming(Remove course of Dimensioanlity)
+play,played,playing----play
+
+Lower
+Bappy is a vert good boy
+bappy is a Data Scientist
+Here, computer will understand bappy and Bappy as 2 different words.
+
+Advance Preprocessing
+-Parts if speech tagging
+-Parsing
+-Coreference and Resolution
+
+3.Feature Engineering
+Text Vectorization
+-TFIDF
+-Bag of Words
+-Word2Vec
+-One Hot Encoding
+-Transformer models
+
+4.Modelling
+Choose diff models-open source LLM--Good GPU, CPU memory
+                    -paid Models-openAI,train models in server,good for weak laptop.
+
+5.Evaluation
+-Intrinsive-Metrics(ROC,AUC,Confusion metrics)
+-Extrinsive-After Deployment(Production)
+
+6. Deployment
+
+7. Monitoring and Retraining
+
+Few Common terms
+1.Corpus(Entire Text)
+2.Vocabulary(Unique words in corpus)
+3.Documents(one row/one line)
+4. Words(single word)
+
+Lecture 5-Data Preprocessing and Cleaning
+Stopwords-This movie is Awesome, I loved it. Stopwords-This, is, I , it.
 
