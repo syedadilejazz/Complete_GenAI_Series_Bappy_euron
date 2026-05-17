@@ -315,3 +315,45 @@ companies provide powerful APIs
 developers build apps around them
 open-source community builds alternatives
 That balance is shaping the entire GenAI industry right now.
+
+
+End to End Generative AI Pipeline
+Generative AI pipeline is a set of steps followed by build an end to end GenAI Software.
+Break the problem down into several sub-problem, then try to develop a step by step procedure to solve them. Since, language processing is invoolved , we would also list all the forms of text processing needed at each steps. This step by step processing of text is known as pipeline.
+-Data Acquisition
+-Data Preparation
+-Feature Engineering(Text Representation)
+-Modelling
+-Evaluation
+-Deployment
+-Monitoring & Model Updating
+
+NLP Pipeline
+-Data Acquistion
+--Available Data(csv,txt,pdf,docs,xlsx)
+--Other Data Sources(DB,Internet,APIs and Scrapping)
+--No Data(Create your own data)(LLM OpenAI can generate data)
+Note-If you have less data the you can perform Data Augmentation
+Example1-Replace with Synomyms
+I am a data Scientist-----I am a AI Engineer
+Example2-Image Augmentation Technique(Rotate, angle change etc)
+Example3-Baigram Flip
+I am Bappy---- Bappy is my Name
+Example4- Back Transilate
+English-Hindi-Spanish-Bengali
+Example5-Add Additional Data/Noise
+I am a Data Scientist, I love this job.
+
+
+-Data Preprocessing
+-Cleanup(HTML,enoji,spelling correction)
+-Basic Preprocessing-Tokenisation(sentences and words)
+-Advance Preprocessing
+-Optional Preprocessing
+--Stopword removal
+--Steaming(Less used nowadays)
+--lemmantization(Actively used)
+--Puncatuation removal(@#$%^&*():"<>?)
+--Lower case
+--Language Detetction
+
