@@ -406,4 +406,14 @@ Few Common terms
 
 Lecture 5-Data Preprocessing and Cleaning
 Stopwords-This movie is Awesome, I loved it. Stopwords-This, is, I , it.
-
+Lowering
+removal html tags
+remove url
+punctuation handling
+chat_conversion handle(Abbreviation to full form)
+incorrect_text handling
+Stopwords
+remove_emoji handle
+Tokenization-Split function, Regular Expression,NLTK, Spacy.
+Stemmer-PorterStemmer
+Lemmatization-WordNetLemmatizer
