@@ -417,3 +417,18 @@ remove_emoji handle
 Tokenization-Split function, Regular Expression,NLTK, Spacy.
 Stemmer-PorterStemmer
 Lemmatization-WordNetLemmatizer
+
+Some common terms to remember:
+
+Corpus-Entire Text
+Vocabulary-Unique words in corpus
+Document-One row/One Line
+Word-Single word
+
+One Hot Encoding- Represent Single words,Binary Vector(0/1), Just presence of words
+Bag of Words-Represent entire sentence/document, Frequency/count vector/Presence+How many time it occurs
+N-grams-It is part of BOW, where we will consder n words as one word
+TF-IDF (Term frequency- Inverse document frequency)-
+        Term Frequency-No. of time word is coming in one document
+        Inverse Document Frequnecy-No. of time word is coming in all documents
+Word2Vec-DL technique(Neural Network)(Back Propagation which adjusts weights)
