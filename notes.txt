@@ -432,3 +432,67 @@ TF-IDF (Term frequency- Inverse document frequency)-
         Term Frequency-No. of time word is coming in one document
         Inverse Document Frequnecy-No. of time word is coming in all documents
 Word2Vec-DL technique(Neural Network)(Back Propagation which adjusts weights)
+
+
+GenAI
+What are LLM?
+A large language model is a trained deep learning model that understand and generate text in a human like fashion.
+LLMs are good at understanding and generating human language.
+
+So, how do we use an LLM?
+
+The garden was full of beautiful flower(LLMs)
+Its raining cat and dogs(LLMs)
+I have two apples and I eat one I'm left with One(LLMs)
+
+Why we call it Large Language Model?
+Because of size and complexity of the Neural Network as well as the size of the dataset that it was trained on.
+
+Reseacrhers started to make these models large and trained in huge dataset.
+That they started showing impressive results like understanding complex Natural Language and generating language more eloquently tahn ever.
+
+Transfer Learning-Using existing model, model is already trained with alot of Data.
+
+LLMs Model Core Architecture-Large language models are based on transformer a type pf Neural Network.
+Architecture invented my Google.
+
+What makes LLM so powerful?
+Incase of llm,one model can be used for a whole variety of task like-
+text generation, chatbot,summarizer,translation,code generation and soon
+So, LLM is subset of Deep learning and it has some propperties merge with Generative AI.
+
+Refer Github--->open-LLMs
+
+Transformer Tree
+Transformer consist-Encoder and Decoder
+Bert--DistilBert,RoBert,XLM-XLM-R, ALBERT,ELECTRA,DeBERTA-Encoder
+GPT,GPT-2--CTRL,GPT-3,GPT-Neo-Decoder
+T5,BART,M2M-100,BIG BIRD-Encoder AND Decoder
+
+OpenAI Based LLM Models
+GPT-4,GPT-3.5,GPT BASE, DALLE,WHISPER,EMBEDDINGS, MODERAION, GPT-3
+
+Other open source models-Mistral,LLAMA,GEMINI,FALCON,CLAUDE,MPT-30B,STABLELM
+
+Prompt Designing
+All the text that we feed into an LLM as input is called a prompt and this whole art is known as prompt design.
+Which is about figuring out how to wrote and format prompt text to get LLMs to do what you want.
+
+It's raining cats and ________
+I have tow apples and I ear one, I'm left with ________
+The approach using a single command to get an LLM to take on a behavior is called zero shot learning
+
+-Write a poem about Ada Lovelace in the style of Shakespeare.
+-Explian Quantum Physics to me like I'm five year old.
+
+Few Shot Learning-Instruction+Examples
+
+In Depth intutuin of Transformer-Attention all you need paper
+Jay Alammar tranformer Blog
+
+Attention paper stacks six of them(Encoder and Decoder) on top of each other-Thers's nothing magical about the number six.
+One can definetly experiment with other arrangement.
+The decodeing component is a stack of decoders of the same number.
+
+Multi-Head Attention
+It uses several attention Head. Benefit, if we pass large prompt to chatgpt, it process very efficiently by using small time.
