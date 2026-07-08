@@ -496,3 +496,15 @@ The decodeing component is a stack of decoders of the same number.
 
 Multi-Head Attention
 It uses several attention Head. Benefit, if we pass large prompt to chatgpt, it process very efficiently by using small time.
+
+Jay Alammar Transformer Blog-
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/
+
+The Transformer – a model that uses attention to boost the speed with which these models can be trained.
+
+The encoder’s inputs first flow through a self-attention layer – a layer that helps the encoder look at other words in the input sentence as it encodes a specific word.
+
+The embedding only happens in the bottom-most encoder. 
+The abstraction that is common to all the encoders is that they receive a list of vectors each of the size 512 – 
+In the bottom encoder that would be the word embeddings, but in other encoders, it would be the output of the encoder that’s directly below. 
+The size of this list is hyperparameter we can set – basically it would be the length of the longest sentence in our training dataset.
